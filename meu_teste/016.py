@@ -15,6 +15,7 @@ pi = 3.14159265359
 meu_numero = f'o numero pi é: {pi:.1f}'
 meu_numero_deslocado = f'o numero pi deslocado é: {pi:6.1f}'
 meu_numero_preciso = f'o numero pi mais preciso é: {pi:.4f}'
+print(meu_numero)
 print(meu_numero_deslocado)
 print(meu_numero_preciso)
 
@@ -36,10 +37,11 @@ Nome: ata          - número de letras:   3
 Nome: jaca         - número de letras:   4
 Nome: graviola     - número de letras:   8
 
+o numero pi é: 3.1
 o numero pi deslocado é:    3.1
 o numero pi mais preciso é: 3.1416
 
-a data de hoje é 2021-09-14 11:25:02.539982
-a data de hoje formatada é 14/09/2021
+a data de hoje é 2021-09-15 08:34:37.293890
+a data de hoje formatada é 15/09/2021
 ------------- fim ------------
 """
