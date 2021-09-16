@@ -4,7 +4,7 @@ import os
 print('----------- inicio ---------------')
 
 try:
-    entradas = os.scandir('024_diretorio')
+    entradas = os.scandir('024_diretorio')  # se fosse ele mesmo seria '.'
 
     for obj in entradas:
         print(obj)
