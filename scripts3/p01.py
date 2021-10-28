@@ -5,6 +5,7 @@ janela.mainloop()
 
 
 """
-python p01.py
+no terminal:
+   python p01.py
 
 """

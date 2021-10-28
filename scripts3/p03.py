@@ -6,3 +6,8 @@ janela.title("Aplicação GUI com o Widget Label")
 ttk.Label(janela, text="Componente Label\n\nOi .....").grid(column=0, row=0)
 janela.mainloop()
 
+"""
+no terminal:
+   python p03.py
+
+"""   
