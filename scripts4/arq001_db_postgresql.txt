@@ -1,0 +1,106 @@
+
+https://digitalinnovation.one/artigos/como-fiz-para-abrir-o-utilizar-o-postgresql-no-terminal-do-windows
+
+
+porta 5432
+
+no terminal:
+   postgresql -U postgres
+
+
+
+p/ sair:
+   exit
+
+
+
+
+--------------------------------------------------
+
+CREATE TABLE public."AGENDA"
+(
+id integer NOT NULL,
+nome text COLLATE pg_catalog."default" NOT NULL,
+telefone char(12) COLLATE pg_catalog."default" NOT NULL
+)
+
+TABLESPACE pg_default;
+ALTER TABLE public."AGENDA"
+OWNER to postgres;
+
+--------------------------------------------------
+
+INSERT INTO public."AGENDA"( id, nome, telefone)
+VALUES (1, 'teste 1', '02199999999');
+
+--------------------------------------------------
+
+SELECT * FROM public."AGENDA";
+
+imprime:
+ id |  nome   |   telefone
+----+---------+--------------
+  1 | teste 1 | 02199999999
+(1 row)
+
+
+--------------------------------------------------
+
+no terminal:
+    pip install psycopg2
+
+
+exemplo:
+psycopg2.connect (database = "NomeDoBancoDeDados", user = "LoginDoUsuário", senha = "SenhaDoBancoDeDados", 
+                  host = "EndereçoDaAplicação", porta = "NúmeroDaPorta")
+
+
+--------------------------------------------------
+
+//exemplo
+nomeDaTabela = 'tabelaExemplo'
+
+cursor.execute(
+"insert into %s values (%%s, %%s)" % nomeDaTabela,
+[10, 20])
+
+//exemplo
+carros = (
+   (1, 'Celta', 35000),
+   (2, 'Fusca', 30000),
+   (3, 'Fiat Uno', 32000)
+)
+con = psycopg2.connect(database='BancoExemplo', user='postgres',
+password='postgres')
+cursor = con.cursor()
+query = "INSERT INTO cars (id, nome, preco) VALUES (%s, %s, %s)"
+cursor.executemany(query, carros)
+
+
+--------------------------------------------------
+
+
+
+
+
+
+
+
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+
+
+
