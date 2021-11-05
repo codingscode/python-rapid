@@ -79,10 +79,41 @@ cursor.executemany(query, carros)
 
 --------------------------------------------------
 
+criar tabela PRODUTO.
+   suas colunas são CODIGO integer primary key not null, NOME text not null, PRECO real not null
+   
+
+CREATE TABLE public."PRODUTO"
+(
+id integer NOT NULL,
+nome text COLLATE pg_catalog."default" NOT NULL,
+telefone char(12) COLLATE pg_catalog."default" NOT NULL
+)
+
+TABLESPACE pg_default;
+ALTER TABLE public."PRODUTO"
+OWNER to postgres;
+
+psql
+senha
+
+psql -h localhost -U postgres -W -d postgres
+
+postgresql -U postgresc
+
+\l -> listar databases
 
 
 
+CREATE TABLE PRODUTO(
+   CODIGO INT PRIMARY KEY NOT NULL,
+   NOME TEXT NOT NULL,
+   PRECO REAL NOT NULL
+   
+);
 
+
+INSERT INTO PRODUTO(CODIGO, NOME, PRECO) VALUES (25, 'Produto_25', 30);
 
 
 
